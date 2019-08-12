@@ -4,13 +4,6 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Página Inicial</h2>
-
-<p>
-    <a asp-action="Create" class="btn btn-info">Create New</a>
-</p>
-
-
 @*<table class="table">
     <thead>
         <tr>
@@ -29,7 +22,9 @@
             <th></th>
         </tr>
     </thead>*@
+
 <tbody>
+
     @foreach (var item in Model)
     {
         <tr>
@@ -37,27 +32,28 @@
                 <div class="card-header">
                     <h1>
                         @Html.DisplayFor(modelItem => item.Titulo)
-
                     </h1>
+                    <div class="card-body">
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Excluir</a>
+                    </div>
                 </div>
                 <div class="card-body">
                     <footer class="blockquote-footer">@Html.DisplayFor(modelItem => item.CreatedDate)</footer>
                     <blockquote class="blockquote mb-0">
 
                         @Html.DisplayFor(modelItem => item.Descricao)
-                        <footer class="blockquote-footer"> Autor:</footer>
+
                     </blockquote>
-
                 </div>
-
                 <footer class="blockquote-footer">Categoria: @Html.DisplayFor(modelItem => item.Anime)</footer>
-
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |*@
+                    
+                    <a asp-action="Create" class="btn btn-info">Nova postagem</a>
                 </td>
         </tr>
     }
+   
 </tbody>
 

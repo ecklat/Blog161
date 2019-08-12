@@ -12539,11 +12539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lab001\\source\\repos\\Animax\\Animax\\Animax.csproj",
+      "projectUniqueName": "C:\\Users\\lab001\\Desktop\\teste\\Blog161\\Animax\\Animax\\Animax.csproj",
       "projectName": "Animax",
-      "projectPath": "C:\\Users\\lab001\\source\\repos\\Animax\\Animax\\Animax.csproj",
+      "projectPath": "C:\\Users\\lab001\\Desktop\\teste\\Blog161\\Animax\\Animax\\Animax.csproj",
       "packagesPath": "C:\\Users\\lab001\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lab001\\source\\repos\\Animax\\Animax\\obj\\",
+      "outputPath": "C:\\Users\\lab001\\Desktop\\teste\\Blog161\\Animax\\Animax\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
